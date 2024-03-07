@@ -1,0 +1,80 @@
+/************************* Variables *********************/
+:root {
+  --font-size-input: 0.9rem;
+  --font-size-labels: 1.3rem;
+  --font-size-submit: 1.5rem;
+  --font-weight-labels: 200;
+  --letterSpacing: 0.025rem;
+  /********Color****************/
+  --main-color: hsl(0, 100%, 48%, 0.5);
+  /********Margins*************/
+  --margin-top-form: 1rem;
+  --margin-start-text: 1.5rem;
+  --margin-end-text: 0.3rem;
+  /********Image**************/
+  /*********Inputs*************/
+  --button-padding: 0.8rem;
+  --button-color: hsla(0, 1%, 17%, 0.65);
+}
+
+/************************************** Form ******************************************************/
+.survey-form {
+  border-radius: 0.25rem;
+  padding: 2.5rem 2.5rem;
+  background-color: hsl(0, 0%, 17%, 0.5);
+  font-family: var(--font-text);
+  color: var(--main-color);
+  max-width: 400px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group:nth-of-type(2) {
+  margin-top: var(--margin-top-form);
+}
+
+.survey-form__label {
+  font-weight: var(--font-weight-labels);
+  font-size: var(--font-size-labels);
+  margin-block-end: var(--margin-end-text);
+}
+
+.survey-form__input {
+  background-color: var(--main-color);
+  border-radius: 0.25rem;
+  height: 35px;
+  padding-left: 0.5rem;
+  font-size: var(--font-size-input);
+  letter-spacing: var(--letterSpacing);
+  border: 0;
+}
+
+input::placeholder {
+  color: red;
+}
+
+.submit-button {
+  color: var(--main-color);
+  background-color: var(--button-color);
+  font-size: var(--font-size-submit);
+  font-weight: 600;
+  margin-block-start: var(--margin-start-text);
+  padding: var(--button-padding) 0 var(--button-padding) 0;
+  width: 100%;
+  border-radius: 25px;
+  border: 2px solid hsl(0, 100%, 46%, 0.4);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
