@@ -1,0 +1,11 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  text-transform: uppercase;
+  font-weight: 100;
+
+  /* cursor: url("assets/mouse_silence.svg"),auto; */
+}
