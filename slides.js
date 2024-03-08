@@ -13,7 +13,7 @@ let slides = [
         leadingProp: 1.05,
       },
       {
-        text: "click anywhere to navigate",
+        text: "Navigate by clicking anywhere on the screen.",
         maxH: 30,
         maxW: 1500,
         spaceBottom: 0,
