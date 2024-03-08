@@ -69,7 +69,7 @@ function Layout() {
             main.innerHTML = data;
           })
           .catch((error) => console.error("Error to get file", error));
-      }, 3000);
+      }, 4000);
     }
 
     let h = 0;
