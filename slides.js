@@ -6,7 +6,7 @@ let slides = [
     darkMode: 0,
     boxes: [
       {
-        text: "SOUNDS LIKE SILENCE",
+        text: "Welcome to our sacred community",
         maxH: 400,
         maxW: 1500,
         spaceBottom: 50,
@@ -35,7 +35,7 @@ let slides = [
         leadingProp: 1.05,
       },
       {
-        text: "WELCOME TO Danzafono 3.0, A DIGITAL EXPERIENCE AROUND SILENCE AND IMPROVISED MOVEMENT. / THIS WORK IS PART OF THE PERFORMANCE Danzafono CREATED BY THE SPANISH DANCER Salud Lopez.",
+        text: "Welcome to our sacred circle. Embrace the journey ahead with open hearts and minds. Together, we honor respect and kindness.",
         maxH: 660,
         maxW: 1500,
         spaceBottom: 0,
@@ -57,7 +57,7 @@ let slides = [
         leadingProp: 1.05,
       },
       {
-        text: "IN Danzafono, THE AUDIENCE SHAPES THE MOVEMENT OF THE DANCER BY CHOSING AND READING Words. / THE DANCER IS GUIDED BY THE “MUSIC” - THE MEANING OF THE WORDS AND THE RUMOUR OF THE AUDIENCE.",
+        text: "Join us in seeking truth and enlightenment. Together, we walk the path of spiritual growth. Let empathy guide our interactions",
         maxH: 660,
         maxW: 1500,
         spaceBottom: 0,
@@ -79,7 +79,7 @@ let slides = [
         leadingProp: 1.05,
       },
       {
-        text: "HERE THE AUDIENCE IS you. AND THE DANCER, the machine. / LET YOURSELF GO ON A shared dance GUIDED BY THE IMPROVISED MOVEMENTS OF EACH OTHER.",
+        text: "Step into our community of seekers. Here, find solace, wisdom, and guidance on your spiritual quest. Embrace unity and understanding",
         maxH: 660,
         maxW: 1500,
         spaceBottom: 0,
@@ -92,27 +92,13 @@ let slides = [
     showElements: true,
     delay: 1000,
     darkMode: 0,
-    boxes: [],
-  },
-  {
-    n: 5,
-    showElements: false,
-    delay: 0,
-    darkMode: 1,
     boxes: [
       {
-        text: "THANK YOU",
-        maxH: 300,
-        maxW: 950,
-        spaceBottom: 50,
-        leadingProp: 1.05,
-      },
-      {
-        text: "This digital experience has been created by Unconform and André Burnier and it’s an extension of the physical performance Danzafono, created by Salud Lopez. / If you enjoy it, please share it with others so they can dance too. Or click anywhere to go back to the stage!",
-        maxH: 250,
-        maxW: 800,
+        text: "Welcome",
+        maxH: 660,
+        maxW: 1500,
         spaceBottom: 0,
-        leadingProp: 1.5,
+        leadingProp: 1.1,
       },
     ],
   },

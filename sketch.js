@@ -57,12 +57,13 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
 
   ui = new Ui();
-  ui.init();
+  // ui.init();
   ly = new Layout();
   ly.loadSlide();
-  setTimeout(() => {
+  //Change color to white and black ath the end
+  /*   setTimeout(() => {
     setDarkMode(1);
-  }, 3000);
+  }, 3000); */
   spawner = new Spawner();
   frameRate(fps);
 }
@@ -97,12 +98,6 @@ function touchEnded() {
   if (!ui.checkClick()) ly.click();
   touch = false;
 }
-
-// function keyReleased() {
-//   if (key == ' ') resetFromStart()
-//   else if (key == '5') endExperience()
-//   else if (key == '4') goToPlayground()
-// }
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);

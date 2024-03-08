@@ -59,13 +59,19 @@ function Layout() {
       this.textBoxes[i].unlock();
     }
 
-    setTimeout(() => {
-      ui.setShowElements(options.showElements);
-    }, options.delay);
-    if (this.slideN == 4)
+    if (this.slideN == 4) {
+      const main = document.getElementById("main");
+
       setTimeout(() => {
-        ui.timer.start();
-      }, options.delay);
+        fetch("./form.html")
+          .then((response) => response.text())
+          .then((data) => {
+            main.innerHTML = data;
+          })
+          .catch((error) => console.error("Error to get file", error));
+      }, 3000);
+    }
+
     let h = 0;
     let w = 0;
 
@@ -93,7 +99,7 @@ function Layout() {
       tb.translate(d);
     }
     this.maxY += d.y;
-    setDarkMode();
+    // setDarkMode();
   };
 
   this.setSlide = function (n) {
@@ -204,15 +210,6 @@ function TextBox(_o) {
         line = [];
       } else {
         let link = false;
-        // if (this.options.links) {
-        //   if (this.words[i] == "Unconform") {
-        //     link = "http://unconform.studio";
-        //   } else if (this.words[i] == "André" || this.words[i] == "Burnier") {
-        //     link = "https://www.andreburnier.com";
-        //   } else if (this.words[i] == "Salud" || this.words[i] == "Lopez.") {
-        //     link = "http://www.enlugardecreacion.org";
-        //   }
-        // }
 
         let wPalavra = textWidth(this.words[i]);
         if (w + wPalavra + textWidth(" ") >= this.w - 1) {
